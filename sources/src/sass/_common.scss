@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Poppins, sans-serif;
+    line-height: normal;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1313px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+h1,.h1-55pt {
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 65px;
+    @include mob {
+        font-size: 46px;
+        font-weight: 500;
+        line-height: 57px;
+    }
+}
+
+h2 {
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 57px;
+}
+
+h3,.h3-30pt {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 33px;
+}
+
+h4,.h4-16pt {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin: 0;
+}
+
+ul, ol, ul li, ol li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

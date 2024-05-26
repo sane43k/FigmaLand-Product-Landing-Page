@@ -1,4 +1,9 @@
-# Front-end Development. Gulp builder. Pug + Sass/SCSS.
+# FigmaLand Product Landing Page  
+
+Made with the pug templating engine and the scss preprocessor.  
+The project is built using the gulp builder.
+
+## Front-end Development. Gulp builder. Pug + Sass/SCSS.
 
 Thanks for choosing our team!  
 This Readme contains all the information needed to work with our markup build, understand it's structure and complile the project on your side.

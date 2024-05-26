@@ -1,0 +1,83 @@
+.feature-section {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+        @include mob {
+            margin-bottom: 55px;
+        }
+        h2 {
+            max-width: 785px;
+            text-align: center;
+            margin-bottom: 100px;
+            @include mob {
+                max-width: 285px;
+                margin-bottom: 45px;
+            }
+        }
+        .feature-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            padding-bottom: 190px;
+            @include mob {
+                padding-bottom: 95px;
+                flex-wrap: wrap;
+                gap: 64px;
+            }
+            .feature-list__item {
+                width: 405px;
+                height: 440px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 31px 0px #00000026;
+                padding: 60px 50px 50px;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                @include mob {
+                    height: 405px;
+                    padding: 40px 50px 50px;
+                    align-items: center;
+                    gap: 20px;
+                }
+                .text-wrapper {
+                    padding: 0 10px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    @include mob {
+                        align-items: center;
+                    }
+                    p {
+                        color: $dark-gray;
+                        @include mob {
+                            text-align: center;
+                        }
+                    }
+                    a {
+                        color: $blue;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .active {
+                background: linear-gradient(230.95deg, #CB1AE8 -0.37%, #37BDA6 100%);
+                .text-wrapper {
+                    color: $white;
+                    p {
+                        color: $white;
+                    }
+                    a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

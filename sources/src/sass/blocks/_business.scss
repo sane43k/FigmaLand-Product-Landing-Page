@@ -1,0 +1,62 @@
+.business-section {
+    .container {
+        max-width: 1260px;
+        @include mob {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 65px;
+        }
+        .text-wrapper {
+            max-width: 400px;
+            float: left;
+            margin-bottom: 36px;
+            display: flex;
+            flex-direction: column;
+            gap: 45px;
+            @include mob {
+                max-width: 394px;
+                margin: 0;
+                text-align: center;
+                gap: 34px;
+            }
+            p {
+                max-width: 321px;
+                color: $dark-gray;
+            }
+
+        }
+        .image-wrapper {
+            float: right;
+            img {
+                width: 762px;
+                height: 545px;
+                @include mob {
+                    width: 463px;
+                    height: 255px;
+                }
+            }
+        }
+        .button-wrapper {
+            float: left;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 13px;
+            @include mob {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                button.btn {
+                    padding: 30px 85px;
+                }
+            }
+        }
+    }
+    .clearfix {
+        clear: both;
+        margin-bottom: 170px;
+    }
+}

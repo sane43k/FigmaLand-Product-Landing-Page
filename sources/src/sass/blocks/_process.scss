@@ -1,0 +1,59 @@
+.process-section {
+    .container {
+        max-width: 1125px;
+        @include mob {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 65px;
+        }
+        .text-wrapper {
+            max-width: 490px;
+            float: left;
+            margin-bottom: 36px;
+            display: flex;
+            flex-direction: column;
+            gap: 45px;
+            @include mob {
+                max-width: 355px;
+                margin: 0;
+                gap: 34px;
+            }
+            p {
+                color: $dark-gray;
+            }
+        }
+        .image-wrapper {
+            float: right;
+            img {
+                width: 516px;
+                height: 486px;
+                @include mob {
+                    width: 463px;
+                    height: 395px;
+                }
+            }
+        }
+        .button-wrapper {
+            float: left;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 22px;
+            @include mob {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                button.btn {
+                    padding: 18px 107px;
+                }
+            }
+        }
+    }
+    .clearfix {
+        clear: both;
+        margin-bottom: 200px;
+    }
+}

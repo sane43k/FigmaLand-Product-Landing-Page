@@ -1,0 +1,67 @@
+.footer-section {
+    background-color: $navy-blue;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include mob {
+            padding-top: 72px;
+            flex-wrap: wrap;
+        }
+        a {
+            color: $white;
+            text-decoration: none;
+            &:hover {
+                opacity: .7;
+            }
+        }
+        .footer-list {
+            padding-right: 75px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .price-list {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        iframe {
+            margin: 62px 87px;
+            border-radius: 22px;
+        }
+        .contact-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 43px;
+            .contact-list {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 17px;
+                &__item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    img[alt="Geolocation"] {
+                        margin-left: -13px;
+                    }
+                    img[alt="Phone"] {
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .social-media {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 28px;
+                @include mob {
+                    padding-bottom: 90px;
+                }
+            }
+        }
+    }
+}

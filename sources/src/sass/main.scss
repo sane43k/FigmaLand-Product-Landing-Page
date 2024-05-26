@@ -1,7 +1,13 @@
-@import "./base/layout";
-
-@import "./blocks/buttons";
-
+@import "./fonts";
+@import "./vars";
+@import "./mixins";
+@import "./buttons";
+@import "./common";
 @import "./blocks/header";
-
+@import "./blocks/feature";
+@import "./blocks/process";
+@import "./blocks/operation";
+@import "./blocks/business";
+@import "./blocks/pricing";
+@import "./blocks/subscribe";
 @import "./blocks/footer";

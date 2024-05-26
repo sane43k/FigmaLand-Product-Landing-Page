@@ -1,5 +1,208 @@
-extends base/_layout
-block head
-    title This is will title
-block page
-  
+- var mainMenuData = ['Home', 'Product', 'About', 'Contact']
+
+doctype html
+html(lang="en")
+    head
+        title FigmaLand
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+        //- meta(name="viewport", content="width=device-width,initial-scale=1")
+        link(rel="stylesheet", href="./css/main.min.css")
+    body
+        header.header-section 
+            .container 
+                .logo-wrapper 
+                    a(href="#")
+                        img(src="./images/logo/logo_186x58.png", width="186", height="58", alt="Logo")
+                nav.main-menu 
+                    ul.main-menu__list 
+                        each item in mainMenuData 
+                            li.main-menu__list__item 
+                                a(href="#").link=item
+                button(type="button" id="sign-up-btn").btn.btn-header-secondary Sign up
+                button(type="button").burger-menu
+                    span
+        section.main-section 
+            .container 
+                .content-wrapper 
+                    h1 Find the Best Solution 
+                        br 
+                        | in Seconds
+                    p.h4-16pt If debugging is the process of removing software bugs.
+                .button-wrapper 
+                    button(type="button").btn.btn-header-primary get started
+                    button(type="button").btn.btn-header-secondary try for free
+                .image-wrapper
+                    img(src="./images/screen_1085x670.png", width="1085", height="670", alt="Screen")
+        section.feature-section 
+            .container 
+                h2 FigmaLand was Built Specifically for You 
+                .feature-list
+                    .feature-list__item 
+                        img(src="./images/icons/manage_blue_63x63.png", width="63", height="63", alt="Icon")
+                        .text-wrapper
+                            h3 Management
+                            p Slate helps you see how many more days you need to work 
+                                br
+                                | to reach your financial goal 
+                                br
+                                | for the month and year.
+                            a(href="#") Learn More
+                    .feature-list__item.active 
+                        img(src="./images/icons/custom_white_61x61.png", width="61", height="61", alt="Icon")
+                        .text-wrapper
+                            h3 Customer Support
+                            p Slate helps you see how many more days you need to work 
+                                br
+                                | to reach your financial goal 
+                                br
+                                | for the month and year.
+                            a(href="#") Learn More
+                    .feature-list__item 
+                        img(src="./images/icons/collab_blue_63x53.png", width="63", height="53", alt="Icon")
+                        .text-wrapper
+                            h3 Collaborative
+                            p Slate helps you see how many more days you need to work 
+                                br
+                                | to reach your financial goal 
+                                br
+                                | for the month and year.
+                            a(href="#") Learn More
+        section.process-section 
+            .container 
+                .text-wrapper
+                    h2 Quick &#38; Easy Process
+                    p.h4-16pt Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan 
+                        br
+                        | their schedule.
+                .image-wrapper 
+                    img(src="./images/screen_1_578x548.png", width="578", height="548", alt="Screen")
+                .button-wrapper 
+                    button(type="button").btn.btn-primary sign up for free
+                    button(type="button").btn.btn-secondary find out more
+            .clearfix 
+        section.operation-section 
+            .container 
+                .text-wrapper
+                    h2.first-title Perfect for Operations HR and Finance
+                    h2.second-title OpenType features and Variable fonts
+                    p.h4-16pt Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan 
+                        br
+                        | their schedule.
+                    a(href="#") Learn more 
+                .image-wrapper 
+                    img(src="./images/screen_2_579x600.png", width="579", height="600", alt="Screen")
+                .button-wrapper 
+                    button(type="button").btn.btn-primary Button
+            .clearfix 
+        section.business-section 
+            .container 
+                .text-wrapper
+                    h2 Perfect solution 
+                        br
+                        | for small 
+                        br
+                        | business
+                    p Being a freelancer is a rollercoaster of emotions. We built Slate to keep your freelance business less stressful. We'd love to show you what we're building...
+                .image-wrapper 
+                    img(src="./images/meet-up_824x607.png", width="824", height="607", alt="Meet up")
+                .button-wrapper 
+                    button(type="button").btn.btn-primary sign up for free
+                    button(type="button").btn.btn-secondary find out more
+            .clearfix
+        section.pricing-section 
+            .container 
+                .text-wrapper
+                    h2 Simple Pricing for Your Team
+                    p Slate helps you see how many more days you need 
+                .pricing-list 
+                    .pricing-list__item
+                        h3 Education
+                        p.h4-16pt Brief price Description
+                        img(src="./images/pricing/education_259x448.png", width="259", height="448", alt="Man")
+                        .price-wrapper 
+                            p.h1-55pt 0
+                            .dollar-wrapper 
+                                p.h3-30pt $
+                                p.h4-16pt Per/ month
+                        ul.service-list 
+                            li.service-list__item Only 2 Operators
+                            li.service-list__item Abandoned Cart
+                            li.service-list__item Facebook &#38; Instagram Ads
+                            li.service-list__item.inactive Order Notifications
+                            li.service-list__item.inactive Landing Pages
+                        button(type="button").btn.btn-primary Order Now
+                    .pricing-list__item
+                        h3 Professional
+                        p.h4-16pt Brief price Description
+                        img(src="./images/pricing/professional_259x442.png", width="259", height="442", alt="Man")
+                        .price-wrapper 
+                            p.h1-55pt 10
+                            .dollar-wrapper 
+                                p.h3-30pt $
+                                p.h4-16pt Per/ month
+                        ul.service-list 
+                            li.service-list__item Only 2 Operators
+                            li.service-list__item Abandoned Cart
+                            li.service-list__item Facebook &#38; Instagram Ads
+                            li.service-list__item Order Notifications
+                            li.service-list__item.inactive Landing Pages
+                        button(type="button").btn.btn-primary Order Now
+                    .pricing-list__item
+                        h3 Business
+                        p.h4-16pt Brief price Description
+                        img(src="./images/pricing/business_259x448.png", width="259", height="448", alt="Man")
+                        .price-wrapper 
+                            p.h1-55pt 99
+                            .dollar-wrapper 
+                                p.h3-30pt $
+                                p.h4-16pt Per/ month
+                        ul.service-list 
+                            li.service-list__item Only 2 Operators
+                            li.service-list__item Abandoned Cart
+                            li.service-list__item Facebook &#38; Instagram Ads
+                            li.service-list__item Order Notifications
+                            li.service-list__item Landing Pages
+                        button(type="button").btn.btn-primary Order Now
+        section.subscribe-section 
+            hr
+            .container 
+                .text-wrapper
+                    h2 Subscribe 
+                    p Subscribe to get exclusive news &#38; offer
+                form(action="")
+                    input(type="email", placeholder="Enter Your Adress Email" required)
+                    button(type="submit").btn.btn-primary Subscribe 
+        footer.footer-section 
+            .container 
+                ul.footer-list
+                    li.footer-list__item
+                        a(href="#") Price Item One 
+                    li.footer-list__item
+                        a(href="#") Price Item Two 
+                    li.footer-list__item
+                        a(href="#") Price Item Three
+                ul.price-list
+                    li.price-list__item
+                        a(href="#") Price Item One 
+                    li.price-list__item
+                        a(href="#") Price Item Two  
+                    li.price-list__item
+                        a(href="#") Price Item Three  
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A29a6a04c405a779ab284891f1ccc0c141fe5fd56a69b6ff95f20c842140b8207&amp;source=constructor" width="334" height="247" frameborder="0"></iframe>
+                .contact-wrapper
+                    .contact-list 
+                        .contact-list__item 
+                            img(src="./images/icons/geolocation_white_47x47.png", width="47", height="47", alt="Geolocation")
+                            a(href="https://yandex.ru/map-widget/v1/?um=constructor%3A29a6a04c405a779ab284891f1ccc0c141fe5fd56a69b6ff95f20c842140b8207&amp;source=constructor", target="_blank", rel="noopener")
+                                | 7480 Mockingbird Hill undefined 
+                        .contact-list__item 
+                            img(src="./images/icons/phone_white_22x33.png", width="22", height="33", alt="Phone")
+                            a(href="tel:2395550108", target="_blank", rel="noopener") 
+                                | &#40;239&#41; 555-0108
+                    .social-media 
+                        a(href="https://x.com/", target="_blank", rel="noopener") 
+                            img(src="./images/icons/twitter_white_34x29.png", width="34", height="29", alt="Twitter")
+                        a(href="https://www.facebook.com/", target="_blank", rel="noopener") 
+                            img(src="./images/icons/facebook_white_33x33.png", width="33", height="33", alt="Facebook")
+                        a(href="https://linkedin.com/", target="_blank", rel="noopener") 
+                            img(src="./images/icons/linkedin_white_33x33.png", width="33", height="33", alt="LinkedIn")

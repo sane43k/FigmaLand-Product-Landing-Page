@@ -1,0 +1,69 @@
+.operation-section {
+    .container {
+        max-width: 1160px;
+        @include mob {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+        }
+        .text-wrapper {
+            max-width: 545px;
+            float: right;
+            margin-bottom: 36px;
+            display: flex;
+            flex-direction: column;
+            gap: 45px;
+            @include mob {
+                max-width: 355px;
+                margin: 0;
+                gap: 34px;
+                .first-title {
+                    display: none;
+                }
+            }
+            .second-title {
+                display: none;
+                @include mob {
+                    display: block;
+                }
+            }
+            p {
+                color: $dark-gray;
+            }
+            a {
+                display: none;
+                @include mob {
+                    display: block;
+                    line-height: 27px;
+                    color: $dark-gray;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
+            }
+        }
+        .button-wrapper {
+            float: left;
+            margin-left: 60px;
+            @include mob {
+                margin: 0;
+            }
+        }
+        .image-wrapper {
+            float: left;
+            img {
+                width: 516px;
+                height: 538px;
+                @include mob {
+                    width: 463px;
+                    height: 387px;
+                }
+            }
+        }
+    }
+    .clearfix {
+        clear: both;
+        margin-bottom: 200px;
+    }
+}

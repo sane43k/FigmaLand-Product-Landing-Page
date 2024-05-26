@@ -1,0 +1,96 @@
+.pricing-section {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 63px;
+        margin-bottom: 50px;
+        .text-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 30px;
+            @include mob {
+                max-width: 340px;
+            }
+            p {
+                color: $dark-gray;
+                @include mob {
+                    max-width: 280px;
+                }
+            }
+        }
+        .pricing-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 33px;
+            padding-bottom: 80px;
+            @include mob {
+                flex-wrap: wrap;
+            }
+            &__item {
+                width: 335px;
+                border: 1px solid $gray;
+                border-radius: 10px;
+                padding: 50px 35px 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h3 {
+                    padding-bottom: 10px;
+                }
+                p.h4-16pt {
+                    color: $dark-gray;
+                    font-size: 12px;
+                    line-height: 18px;
+                    padding-bottom: 30px;
+                }
+                img {
+                    padding-bottom: 30px;
+                }
+                .price-wrapper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    padding-bottom: 40px;
+                    p.h1-55pt {
+                        color: $green;
+                    }
+                    .dollar-wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 5px;
+                        p.h3-30pt {
+                            color: $green;
+                        }
+                        p.h4-16pt {
+                            color: $dark-gray;
+                            padding: 0;
+                        }
+                    }
+                }
+                .service-list {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 20px;
+                    padding-bottom: 40px;
+                    &__item.inactive {
+                        color: $dark-gray;
+                    }
+                }
+            }
+            button.btn.btn-primary {
+                padding: 18px 82px;
+            }
+        }
+    }
+}

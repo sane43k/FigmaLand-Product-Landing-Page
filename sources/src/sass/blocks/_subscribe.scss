@@ -1,0 +1,73 @@
+.subscribe-section {
+    hr {
+        max-width: 865px;
+        margin: 0 auto 120px;
+        @include mob {
+            max-width: 455px;
+        }
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .text-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 27px;
+            padding-bottom: 70px;
+            h2 {
+                text-transform: uppercase;
+            }
+            p {
+                color: $dark-gray;
+                text-align: center;
+            }
+        }
+        form {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding-bottom: 110px;
+            @include mob {
+                max-width: 483px;
+                flex-direction: column;
+                gap: 12px;
+            }
+            input {
+                font-family: sans-serif;
+                font-weight: 700;
+                color: $dark-gray;
+                background-color: $gray;
+                padding: 14px 28px;
+                border: 1px solid $dark-gray;
+                border-radius: 6px;
+                @include mob {
+                    width: 100%;
+                    text-align: center;
+                    border-radius: 7px;
+                }
+                &:focus {
+                    outline: 1px solid $dark-gray;
+                }
+                &::placeholder {
+                    color: $dark-gray;
+                }
+            }
+            button.btn.btn-primary {
+                padding: 18px 46px;
+                text-transform: uppercase;
+                @include mob {
+                    width: 100%;
+                    text-align: center;
+                    border-radius: 7px;
+                    padding: 23px 0;
+                }
+            }
+        }
+    }
+}

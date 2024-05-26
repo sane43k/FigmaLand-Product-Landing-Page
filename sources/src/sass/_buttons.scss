@@ -1,0 +1,121 @@
+.btn {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    border-radius: 40px;
+    padding: 18px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 31px 0px #00000026;
+    &-header-primary {
+        color: $navy-blue;
+        border: 1px solid $white;
+        @include mob {
+            padding: 18px 80px;
+        }
+        &:focus {
+            outline: 1px solid $navy-blue;
+        }
+        &:hover {
+            color: $white;
+            background-color: transparent;
+            border: 1px solid $white;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    &-header-secondary {
+        color: $white;
+        background-color: transparent;
+        border: 1px solid $white;
+        @include mob {
+            padding: 18px 80px;
+        }
+        &:focus {
+            outline: 1px solid $navy-blue;
+        }
+        &:hover {
+            color: $navy-blue;
+            background-color: $white;
+            border: 1px solid $white;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    &-primary {
+        color: $white;
+        background-color: $blue;
+        border: 1px solid $blue;
+        &:focus {
+            outline: 1px solid $white;
+        }
+        &:hover {
+            color: $green;
+            background-color: transparent;
+            border: 1px solid $green;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    &-secondary {
+        color: $green;
+        background-color: transparent;
+        border: 1px solid $green;
+        &:focus {
+            outline: 1px solid $white;
+        }
+        &:hover {
+            color: $white;
+            background-color: $blue;
+            border: 1px solid $blue;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+#sign-up-btn {
+    @include mob {
+        padding: 18px 29px;
+    }
+}
+
+.burger-menu {
+    width: 45px;
+    height: 26px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    position: relative;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    @include mob {
+        display: flex;
+        margin-left: 27px;
+    }
+    %burger {
+        display: block;
+        height: 4px;
+        background-color: $white;
+    }
+    span {
+        @extend %burger;
+        width: 30px;
+        &::after {
+            content: '';
+            width: 15px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            @extend %burger;
+        }
+        &::before {
+            content: '';
+            width: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            @extend %burger;
+        }
+    }
+}
