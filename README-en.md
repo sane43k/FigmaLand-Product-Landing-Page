@@ -2,6 +2,7 @@
 
 Made with the Pug templating engine and the SCSS preprocessor.  
 The project is built using the gulp builder.  
+Template link:  
 https://www.figma.com/design/P5fXoJnLb6Gt1JehZixfwB/13.-Figma-Product-Landing-Page-(Community)?node-id=0-3517&t=L4JHRGTXBZvxxsyB-0
 
 ## Front-end Development. Gulp builder. Pug + Sass/SCSS.

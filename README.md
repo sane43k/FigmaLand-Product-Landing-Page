@@ -2,6 +2,7 @@
 
 Сделано с помощью шаблонизатора Pug и препроцессора SCSS.  
 Проект собран с помощью сборщика gulp.  
+Ссылка на шаблон:  
 https://www.figma.com/design/P5fXoJnLb6Gt1JehZixfwB/13.-Figma-Product-Landing-Page-(Community)?node-id=0-3517&t=L4JHRGTXBZvxxsyB-0
 
 ## Front-end/Вёрстка сайта. Gulp сборщик. Pug + Sass/SCSS.
